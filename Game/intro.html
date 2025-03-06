@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Intro</title>
+    </head>
+    <body>
+        <div class="back">
+            <h1>WANTED</h1>
+            <button id="start">START</button>
+            <button id="cntrl"><img src="Images\game-console.png" height="40px" width="30px"/></button>
+            <button id="music"><img src="Images\music.png" height="30px" width="30px"/></button>
+        </div>
+        <style>
+            @keyframes colorFade {
+                0% { background: blue; }
+                100% { background: red; }
+                }
+            .back{
+                height: 800px;
+                width: 1600px;
+                animation: colorFade 3s infinite alternate;
+                border: solid 1pc black;
+            }
+            h1{
+                font-size: 15pc;
+                text-align: center;
+                text-shadow: 2px 2px 5px gray;
+                position: relative;
+
+            }
+            #music{
+                background-color: rgb(253, 253, 253);
+                position: absolute;
+                bottom: 7%;
+                left: 6%;
+                height: 50px;
+                width: 50px;
+            }
+            #cntrl{
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                bottom: 7%;
+                left: 2%;
+                height: 50px;
+                width: 50px;
+            }
+            #start{
+                background-color: rgb(255, 255, 255);
+                font-family: fantasy;
+                font-size: 50px;
+                height: 80px;
+                width: 250px;
+                position: absolute;
+                top: 55%;
+                left: 43%;
+            }
+        </style>
+    </body>
+</html>
