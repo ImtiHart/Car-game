@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Music</title>
+    </head>
+    <body height="800" width="1600">
+        <style>
+            body {
+                background-color: rgb(199, 0, 0);
+            }
+            label {
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 40px;
+                font-weight: 100;
+            }
+            form {
+                position: absolute;
+                right: 30%;
+                top: 30%;
+            }
+            h1 {
+                position: absolute;
+                font-size: 100px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                left: 25%;
+            }
+            #submit {
+                position: absolute;
+                background-color: rgb(241, 60, 60);
+                font-size: 20px;
+                right: 45%;
+                height: 50px;
+                width: 150px;
+                top: 100%;
+            }
+            #home{
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                bottom: 3%;
+                left: 2%;
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+        <h1>Select audio:</h1>
+        <form id="audio_form">
+            <input id="non" type="radio" name="audio" value="No Music" class="inline"><label for="non">No Music</label><br>
+            <input id="sound_police" type="radio" name="audio" value="KRS-One - Sound of da Police" class="inline"><label for="sound_police">KRS-One - Sound of da Police</label><br>
+            <input id="katy" type="radio" name="audio" value="Katy Perry - I Kissed A Girl" class="inline"><label for="katy">Katy Perry - I Kissed A Girl</label><br>
+            <input id="nig" type="radio" name="audio" value="Gangsta Rap Nigga Nigga Nigga" class="inline"><label for="nig">Gangsta Rap Nigga Nigga Nigga</label><br>
+            <input id="over" type="radio" name="audio" value="Game-Over" class="inline"><label for="over">Game-Over</label><br>
+            <input id="dandan" type="radio" name="audio" value="Dandadan Opening by Creepy Nuts" class="inline"><label for="dandan">Dandadan Opening by Creepy Nuts</label><br>
+            <input id="biggy" type="radio" name="audio" value="Biggy - Dames" class="inline"><label for="biggy">Biggy - Dames</label><br>
+            <input id="phonk" type="radio" name="audio" value="M𝚊𝚝𝚞𝚜𝚑𝚔𝚊  U𝚕𝚝𝚛𝚊𝚏𝚞𝚗𝚔" class="inline"><label for="phonk">M𝚊𝚝𝚞𝚜𝚑𝚔𝚊  U𝚕𝚝𝚛𝚊𝚏𝚞𝚗𝚔</label><br>
+            <input id="Al_qowlu" type="radio" name="audio" value="Al Qowlu Qowlu" class="inline"><label for="Al_qowlu">Al Qowlu Qowlu</label><br>
+            <input id="abc" type="radio" name="audio" value="ABC Song Gracies Corner" class="inline"><label for="abc">ABC Song Gracies Corner</label><br>
+            <input id="mario" type="radio" name="audio" value="Mario Kart" class="inline"><label for="mario">Mario Kart</label><br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <button id="home"><a href="intro.html"><img src="Images\home.png" height="40px" width="30px"/></a></button>
+    </body>
+</html>

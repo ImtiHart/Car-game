@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Game</title>
+    </head>
+    <body>
+        <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .road {
+            position: relative;
+            width: 400px;
+            height: 100vh;
+            background: #2c2c2c;
+            display: flex;
+        }
+
+        .lane {
+            position: relative;
+            flex: 1; /* Ensures equal width for all lanes */
+            height: 100%;
+        }
+
+        .lane-divider {
+            position: absolute;
+            top: 0;
+            left: 100%; /* Moves the line to the right edge of the lane */
+            transform: translateX(-50%); /* Centers the line exactly between lanes */
+            width: 4px;
+            height: 100%;
+            background: repeating-linear-gradient(
+                to bottom,
+                white 0%,
+                white 10%,
+                transparent 10%,
+                transparent 20%
+            );
+        }
+        </style>
+
+        <div class="road">
+            <div class="lane"></div>
+            <div class="lane">
+                <div class="lane-divider"></div>
+            </div>
+            <div class="lane">
+                <div class="lane-divider"></div>
+            </div>
+            <div class="lane">
+                <div class="lane-divider"></div>
+            </div>
+        </div>
+        <script src="music.js"></script>
+
+    </body>
+</html>
